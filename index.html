@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우리대학교</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* 추가적인 스타일은 여기서 정의 */
+        .hero-section {
+            background: url('https://example.com/university-banner.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .feature-icon {
+            font-size: 4rem;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 네비게이션 바 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">우리대학교</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#about">소개</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#programs">교육 프로그램</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">문의</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 메인 배너 섹션 -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>우리대학교에 오신 것을 환영합니다</h1>
+            <p>창의적 교육과 혁신적인 연구로 미래를 이끄는 대학</p>
+            <a href="#about" class="btn btn-primary btn-lg">더 알아보기</a>
+        </div>
+    </section>
+
+    <!-- 소개 섹션 -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center">우리대학교 소개</h2>
+            <p class="text-center lead">우리대학교는 학생 중심의 교육, 창의적 연구, 공공성 강화를 목표로 다양한 학문을 제공합니다.</p>
+            <div class="row mt-5">
+                <div class="col-md-4 text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>우수한 교수진</h3>
+                    <p>전문적 지식과 교육 경험을 가진 교수진이 학생들의 학업을 이끌어갑니다.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>최첨단 교육 시설</h3>
+                    <p>학생들이 최상의 환경에서 공부할 수 있도록 최신 교육 시설을 제공합니다.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>국제 교류 기회</h3>
+                    <p>해외 대학과의 교류 프로그램을 통해 글로벌 경험을 쌓을 수 있습니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 교육 프로그램 섹션 -->
+    <section id="programs" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">교육 프로그램</h2>
+            <p class="text-center lead">다양한 학문 분야와 혁신적인 커리큘럼을 통해 학생들의 잠재력을 키웁니다.</p>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <h4>도시 과학</h4>
+                    <p>도시 문제 해결을 위한 다양한 연구와 실습을 제공합니다.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>경영학</h4>
+                    <p>글로벌 비즈니스 환경에 맞춘 최신 경영 이론을 교육합니다.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>정보 기술</h4>
+                    <p>4차 산업혁명 시대를 이끄는 정보 기술 교육을 강화합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 문의 섹션 -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center">문의하기</h2>
+            <p class="text-center lead">궁금한 점이 있으면 언제든지 문의해 주세요!</p>
+            <form class="mt-4">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="name">이름</label>
+                        <input type="text" class="form-control" id="name" placeholder="이름을 입력하세요">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">이메일</label>
+                        <input type="email" class="form-control" id="email" placeholder="이메일을 입력하세요">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">문의 내용</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="문의 내용을 입력하세요"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">문의하기</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 우리대학교. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
